@@ -5,41 +5,66 @@
     <%- include('header'); -%>
     
 </head>
-<body>
-    <div class="bg-info">   
+<body class="bg-info">
+    <div class="bg-info shadow-lg">   
           <%- include('menu'); -%>
           <%- include('imgshow'); -%>
-          <div class="container mt-50 pt-20 mb-auto">
+    </div>
+    <div class="bg-info">
+          <div class="container pt-20 mb-auto bg-info shadow-lg" style="margin-top: 100px; margin-bottom: 30px;">
             <!-- <img src="./images/.." alt=""> -->
-            <div class="row p-3">
+            <div class="row" style="margin-top: 30px; padding-top: 60px; padding-bottom: 60px;">
               <div class="col-md-4">
-                <figure class="figure">
-                  <img src="images/study-in-canada-mobile.jpg" class="figure-img img-fluid rounded" alt="...">
-                  <figcaption class="figure-caption display-2 text-light font-weight-bolder">文化融入</figcaption>
-                </figure>
+                <div class="card justify-content-center text-right text-light shadow">
+                  <div class="inner">
+                    <img src="./images/study-in-canada-mobile.jpg" class="card-img img-fluid rounded" alt="..." style="height:500px; width: 420px">
+                    <div class="card-img-overlay" style="font-weight: bolder;">
+                      <h2 class="card-title" style="font-weight: bolder;">标题标题</h2>
+                      <a href="#" class="btn btn-warning ">详情</a>
+                    </div>
+                  </div>
+
+                  </div>
               </div>
               <div class="col-md-4">
-                <figure class="figure">
-                  <img src="images/Nurse-home.jpg" class="figure-img img-fluid rounded" alt="...">
-                  <figcaption class="figure-caption display-2 text-light font-weight-bolder">职业发展</figcaption>
-                </figure>
+                <div class="card justify-content-center text-right text-light shadow">
+                  <div class="inner">
+                    <img src="./images/Nurse-home.jpg" class="card-img img-fluid rounded" alt="..." style="height:500px; width: 420px">
+                    <div class="card-img-overlay align-self-end" style="font-weight: bolder;">
+                        <h2 class="card-title" style="font-weight: bolder;">职业教育</h2>
+                        <p class="card-text">随便舒服的输入一些信息</p>
+                        <a href="#" class="btn btn-warning">详情</a>
+  
+                    </div>
+                  </div>
+
+                </div>
               </div>
               <div class="col-md-4">
-                <figure class="figure">
-                  <img src="images/fish-home.jpg" class="figure-img img-fluid rounded" alt="...">
-                  <figcaption class="figure-caption display-2 text-light font-weight-bolder">竞争优势</figcaption>
-                </figure>
+                <div class="card justify-content-center text-right text-light shadow">
+                  <div class="inner">
+                    <img src="./images/fish-home.jpg" class="card-img img-fluid rounded" alt="..." style="height:500px; width: 420px">
+                    <div class="card-img-overlay" style="font-weight: bolder;">
+                      <h2 class="card-title" style="font-weight: bolder;">竞争优势</h2>
+                      <p class="card-text">随便舒服的输入一些信息</p>
+                      <a href="#" class="btn btn-warning">详情</a>
+                    </div>
+                  </div>
+
+                </div>
               </div>
 
             </div>
-            <div class="row p3">
+            <div class="row p3" style="margin-top: 30px; margin-bottom: 80px; padding-bottom: 60px; padding-top: 50px;">
               <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
+                <div class="card justify-content-center" style="width: 18rem;">
                 <img src="./images/emsb-300x186.jpg" class="card-img-top img-fluid rounded" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">标题标题</h5>
                   <p class="card-text">随便舒服的输入一些信息</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="btn btn-primary">详情</a>
                 </div>
                 </div>
               </div>
@@ -49,7 +74,9 @@
                     <div class="card-body">
                       <h5 class="card-title">标题标题</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    <div class="card-footer">
+                      <a href="#" class="btn btn-primary">详情</a>
                     </div>
                 </div>
               </div>
@@ -59,12 +86,13 @@
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">text.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                  <div class="card-footer">
+                    <a href="#" class="btn btn-primary">详情</a>
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
     </div>
     <%- include('footer'); -%>
