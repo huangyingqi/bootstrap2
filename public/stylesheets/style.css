@@ -1,8 +1,71 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 0px;
+  font: 24px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+a :hover{
+  color: rgb(155, 6, 76);
+}
+
+.carousel-item{
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-caption{
+  bottom: 320px;
+  letter-spacing: 10px;
+  margin-top: 25px;
+  margin-left: 200px;
+  padding: 60px;
+  font-family: inherit;
+  color: rgb(61, 58, 109);
+  font-weight: bolder;
+  background-color: rgb(5, 59, 59, 0.25);
+}
+
+.carousel-caption h1{
+  font-size: 80px;
+  letter-spacing: 20px;
+  width: fit-content;
+  align-content: center;
+  text-align: right;
+  font-weight: bolder;
+  color: beige;
+}
+
+.carousel-caption a{
+  align-self: end;
+}
+
+.figure {
+  /* background-color: aliceblue; */
+
+}
+.figure-caption {
+  top: -100px;
+  bottom: 100px;
+  font-weight: bolder;
+  font-size: large;
+  text-align: center;
+  height: 60px;
+}
+
+.card-body{
+  height: 230px;
+  min-height: 200px;
+}
+
+.card-body p{
+  min-height: 70px;
+}
+
+.card img{
+  height: 200px;
 }
