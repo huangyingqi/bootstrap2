@@ -67,7 +67,7 @@ a :hover{
 }
 
 .card img{
-  height: 220px;
+  height: 200px;
 }
 
 .card-img-overlay{
@@ -109,11 +109,54 @@ a :hover{
 }
 
 .img-card-show:hover{
-  transform: scale(1.1);
+  z-index: 1;
+  transform: scale(1.15);
 }
 
 .img-card-show h5{
   font-size: 30px;
   font-weight: bolder;
   color: #00B7FF
+}
+
+elementor-flip-box__layer__title{
+  color:#fff
+}
+.elementor-flip-box__layer__description:not(:last-child),.elementor-flip-box__layer__title:not(:last-child){
+  margin:0 0 20px;
+  padding:0
+}
+.elementor-flip-box__layer__title{
+  line-height:1;
+  font-weight:600
+}
+
+.elementor-flip-box__back{
+  background-image:url("http://localhost:5001/images/policy5-1.jpg");
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+#elementor-91191{
+  background-image:url("http://localhost:5001/images/policy3-1.jpg");
+}
+
+#elementor-91192{
+  background-image:url("http://localhost:5001/images/policy1-1.jpg");
+}
+
+#elementor-210001{
+  background-image:url("http://localhost:5001/images/ben-white.png");
+}
+#elementor-210002{
+  background-image:url("http://localhost:5001/images//policy4-1.jpg");
+}
+#elementor-210003{
+  background-image:url("http://localhost:5001/images//policy6.jpg");
+}
+
+section{
+  padding: 6%
+  margin-top: 80px
 }
