@@ -2,7 +2,8 @@ const router = require('koa-router')()
 router.prefix('/policy')
 router.get('/', async (ctx, next) => {
   await ctx.render('policy', {
-    title: 'Hello Policy!'
+    title: '政策法规!',
+    menu: 'policy'
   })
 })
 

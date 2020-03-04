@@ -9,21 +9,40 @@
     </button> 
     <div class="collapse navbar-collapse pl-5" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto pl-5">
-        <li class="nav-item active bg-success">
-          <a class="nav-link btn btn-info font-weight-bolder" href="http://localhost:5001/"> 中西-首页  <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle btn btn-info font-weight-bolder" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            魁省PEQ 
-          </a>
-          <div class="dropdown-menu bg-info font-weight-bolder" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item btn btn-info bg-info" href="http://localhost:5001/policy/">政策介绍</a>
-            <a class="dropdown-item btn btn-info bg-success" href="#">合作院校</a>
-            <a class="dropdown-item btn btn-info bg-info" href="#">常见问题</a>
-          </div>
-        </li>
+        <% if (menu=='home') { %>
+          <li class="nav-item active bg-success">
+            <a class="nav-link btn btn-info font-weight-bolder" href="http://localhost:5001/"> 中西-首页 <% if (menu=='home') { %> <span class="sr-only">(current)</span><% } %></a>
+          </li>
+        <% }else{ %>
+          <li class="nav-item bg-success">
+            <a class="nav-link btn btn-info font-weight-bolder" href="http://localhost:5001/"> 中西-首页 </a>
+          </li>
+        <% } %>
+        <% if ((menu == 'policy') || (menu == 'faq')) { %>
+          <li class="nav-item active dropdown">
+            <a class="nav-link dropdown-toggle btn btn-info font-weight-bolder" href="http://localhost:5001/policy/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              魁省PEQ <span class="sr-only">(current)</span>
+            </a>
+            <div class="dropdown-menu bg-info font-weight-bolder" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item btn btn-info bg-info" href="http://localhost:5001/policy/">政策介绍</a>
+              <a class="dropdown-item btn btn-info bg-success" href="#">合作院校</a>
+              <a class="dropdown-item btn btn-info bg-info" href="http://localhost:5001/faq/">常见问题</a>
+            </div>
+          </li>
+        <% }else{ %>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle btn btn-info font-weight-bolder" href="http://localhost:5001/policy/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              魁省PEQ
+            </a>
+            <div class="dropdown-menu bg-info font-weight-bolder" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item btn btn-info bg-info" href="http://localhost:5001/policy/">政策介绍</a>
+              <a class="dropdown-item btn btn-info bg-success" href="#">合作院校</a>
+              <a class="dropdown-item btn btn-info bg-info" href="http://localhost:5001/faq/">常见问题</a>
+            </div>
+          </li>
+        <% } %>          
         <li class="nav-item">
-            <a class="nav-link btn btn-info font-weight-bolder" href="#"> 中小学留学 </a>
+            <a class="nav-link btn btn-info font-weight-bolder" href="http://localhost:5001/policy/"> 中小学留学 <% if (menu=='policy') { %> <span class="sr-only">(current)</span><% } %></a>
         </li>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle btn btn-info font-weight-bolder" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

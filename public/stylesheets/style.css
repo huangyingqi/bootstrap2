@@ -160,3 +160,12 @@ section{
   padding: 6%
   margin-top: 80px
 }
+
+/* .elementor-widget-container{
+  padding: 6%;
+} */
+
+.elementor-widget-wrap{
+  padding: 6%;
+  color: #fff;
+}

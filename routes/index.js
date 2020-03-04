@@ -2,7 +2,8 @@ const router = require('koa-router')()
 
 router.get('/', async (ctx, next) => {
   await ctx.render('index', {
-    title: 'Hello Koa 2!'
+    title: '中西教育-首页',
+    menu: 'home'
   })
 })
 
