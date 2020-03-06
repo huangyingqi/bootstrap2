@@ -2,7 +2,7 @@ const router = require('koa-router')()
 router.prefix('/policy')
 router.get('/', async (ctx, next) => {
   await ctx.render('policy', {
-    title: '政策法规!',
+    title: '中西教育-政策法规',
     menu: 'policy'
   })
 })

@@ -1,9 +1,9 @@
 const router = require('koa-router')()
-router.prefix('/faq')
+router.prefix('/blog')
 router.get('/', async (ctx, next) => {
-  await ctx.render('faq', {
-    title: '中西教育-常见问题',
-    menu: 'faq'
+  await ctx.render('blog', {
+    title: '中西教育-博客',
+    menu: 'blog'
   })
 })
 

@@ -118,6 +118,17 @@ a :hover{
   font-weight: bolder;
   color: #00B7FF
 }
+/* 
+#tree-book{
+  display: inline;
+  color: white;
+  width: 100%;
+  padding: 5%;
+  height: 600px;
+} */
+
+
+
 
 elementor-flip-box__layer__title{
   color:#fff
@@ -169,3 +180,53 @@ section{
   padding: 6%;
   color: #fff;
 }
+
+#elementor-policy-1{
+  background-image: url(../images/policy-layer.png); 
+  margin-bottom: 8%;
+  font-size: 100px;
+  font-weight:  bolder;
+}
+
+#elementor-policy-1 h2{
+  font-size: 50px;
+  font-weight:  bolder; 
+  opacity: 0.8;
+}
+#elementor-policy-1 h2:hover{
+  font-size: 60px;
+  font-weight:  bolder; 
+  opacity: 1;
+}
+
+
+#bg-tree{
+  /* background: yellow; */
+  background-image: url("../images/home-700b.png");
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-position: center;
+  /* filter: blur(1px);
+  -webkit-filter: blur(1px); */
+  height: 580px;
+  margin-top: 10%;
+  text-shadow: 2px 2px #0080;
+
+}
+
+#bg-tree p{
+  margin-top: 10%;
+  padding-top: 65%; 
+  padding-left:8%;
+  font-weight: bolder;
+
+}
+
+#bg-tree h2,h3,h4{
+  /* text-shadow: 1px 1px #fff; */
+  font-weight: bolder;
+  font-size: 28px;
+
+}
+
+

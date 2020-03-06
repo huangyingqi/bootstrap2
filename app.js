@@ -10,6 +10,13 @@ const index = require('./routes/index')
 const users = require('./routes/users')
 const policy = require('./routes/policy')
 const faq = require('./routes/faq')
+const cooperation = require('./routes/cooperatiion')
+const Primary = require('./routes/Primary')
+const campus = require('./routes/campus')
+const franch = require('./routes/franch')
+const contact = require('./routes/contact-us')
+const about = require('./routes/about')
+const blog = require('./routes/blog')
 
 // error handler
 onerror(app)
@@ -43,6 +50,13 @@ app.use(index.routes(), index.allowedMethods())
 app.use(users.routes(), users.allowedMethods())
 app.use(policy.routes(), policy.allowedMethods())
 app.use(faq.routes(), faq.allowedMethods())
+app.use(cooperation.routes(), cooperation.allowedMethods())
+app.use(Primary.routes(), Primary.allowedMethods())
+app.use(campus.routes(), campus.allowedMethods())
+app.use(franch.routes(), franch.allowedMethods())
+app.use(contact.routes(), contact.allowedMethods())
+app.use(about.routes(), about.allowedMethods())
+app.use(blog.routes(), blog.allowedMethods())
 
 
 // error-handling

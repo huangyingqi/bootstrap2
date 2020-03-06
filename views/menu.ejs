@@ -1,31 +1,37 @@
 <!-- <h1 class="text-hide" style="background-image: url('./images/logo.gif');">ZhongXi</h1> -->
 <nav id="nav" class="navbar navbar-expand-md navbar-dark fixed-top bg-info navbar-fixed-top nav-shadow shadow">
   <div class="container">
-    <a class="navbar-brand" href="http://www.2-hope.com/" style="">
+    <% if (menu=='home') { %>
+    <a class="navbar-brand  animated fadeInLeft" href="http://www.2-hope.com/" style="">
       <img src="../images/logo.gif" width="110" height="40" alt="">
     </a>
+    <% }else{ %>
+      <a class="navbar-brand" href="http://www.2-hope.com/" style="">
+        <img src="../images/logo.gif" width="110" height="40" alt="">
+      </a>
+    <% } %>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button> 
     <div class="collapse navbar-collapse pl-5" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto pl-5">
         <% if (menu=='home') { %>
-          <li class="nav-item active bg-success">
-            <a class="nav-link btn btn-info font-weight-bolder" href="http://localhost:5001/"> 中西-首页 <% if (menu=='home') { %> <span class="sr-only">(current)</span><% } %></a>
+          <li class="nav-item active bg-info">
+            <a class="nav-link active btn btn-lg btn-info font-weight-bolder" href="http://localhost:5001/"> 中西-首页 <% if (menu=='home') { %> <span class="sr-only">(current)</span><% } %></a>
           </li>
         <% }else{ %>
-          <li class="nav-item bg-success">
+          <li class="nav-item bg-info">
             <a class="nav-link btn btn-info font-weight-bolder" href="http://localhost:5001/"> 中西-首页 </a>
           </li>
         <% } %>
-        <% if ((menu == 'policy') || (menu == 'faq')) { %>
+        <% if ((menu == 'policy') || (menu == 'faq') || (menu == 'cooperation')) { %>
           <li class="nav-item active dropdown">
-            <a class="nav-link dropdown-toggle btn btn-info font-weight-bolder" href="http://localhost:5001/policy/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle btn btn-lg btn-info font-weight-bolder" href="http://localhost:5001/policy/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               魁省PEQ <span class="sr-only">(current)</span>
             </a>
             <div class="dropdown-menu bg-info font-weight-bolder" aria-labelledby="navbarDropdown">
               <a class="dropdown-item btn btn-info bg-info" href="http://localhost:5001/policy/">政策介绍</a>
-              <a class="dropdown-item btn btn-info bg-success" href="#">合作院校</a>
+              <a class="dropdown-item btn btn-info bg-info" href="http://localhost:5001/cooperation/">合作院校</a>
               <a class="dropdown-item btn btn-info bg-info" href="http://localhost:5001/faq/">常见问题</a>
             </div>
           </li>
@@ -36,37 +42,93 @@
             </a>
             <div class="dropdown-menu bg-info font-weight-bolder" aria-labelledby="navbarDropdown">
               <a class="dropdown-item btn btn-info bg-info" href="http://localhost:5001/policy/">政策介绍</a>
-              <a class="dropdown-item btn btn-info bg-success" href="#">合作院校</a>
+              <a class="dropdown-item btn btn-info bg-info" href="http://localhost:5001/cooperation/">合作院校</a>
               <a class="dropdown-item btn btn-info bg-info" href="http://localhost:5001/faq/">常见问题</a>
             </div>
           </li>
-        <% } %>          
-        <li class="nav-item">
-            <a class="nav-link btn btn-info font-weight-bolder" href="http://localhost:5001/policy/"> 中小学留学 <% if (menu=='policy') { %> <span class="sr-only">(current)</span><% } %></a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle btn btn-info font-weight-bolder" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <% } %> 
+
+        <!-- 中小学留学 -->
+        <% if (menu == 'Primary') {%>        
+          <li class="nav-item">
+              <a class="nav-link active btn-info btn-lg font-weight-bolder" href="http://localhost:5001/Primary/"> 中小学留学<span class="sr-only">(current)</span></a>
+          </li>
+        <% }else{ %>
+          <li class="nav-item">
+            <a class="nav-link btn btn-info font-weight-bolder" href="http://localhost:5001/Primary/"> 中小学留学</a>
+          </li>
+        <% } %>
+
+        <!-- 游学 -->
+        <% if (menu == 'Campus') {%>
+          <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle btn btn-lg btn-info font-weight-bolder" href="http://localhost:5001/Campus" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                游学夏令营<span class="sr-only">(current)</span> 
+              </a>
+              <div class="dropdown-menu bg-info" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item btn btn-info bg-info font-weight-bolder" href="http://localhost:5001/Campus">麦吉尔大学夏令营</a>
+              </div>
+          </li>
+        <% }else{ %>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle btn btn-info font-weight-bolder" href="http://localhost:5001/Campus" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               游学夏令营 
             </a>
             <div class="dropdown-menu bg-info" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item btn btn-info bg-info font-weight-bolder" href="#">麦吉尔大学夏令营</a>
+              <a class="dropdown-item btn btn-info bg-info font-weight-bolder" href="http://localhost:5001/Campus">麦吉尔大学夏令营</a>
             </div>
-        </li>
+          </li>
+        <% } %>   
+          
+        <% if (menu == 'franch') {%>
+          <li class="nav-item">
+              <a class="nav-link active btn btn-lg btn-info btn-large font-weight-bolder" href="http://localhost:5001/franch"> 法语学习 <span class="sr-only">(current)</span></a>
+          </li>
+        <% }else{ %>
+          <li class="nav-item">
+            <a class="nav-link btn btn-info font-weight-bolder" href="http://localhost:5001/franch"> 法语学习 </a>
+          </li>
+        <% } %>
+
+        <% if (menu == 'cooperation') {%>
         <li class="nav-item">
-            <a class="nav-link btn btn-info font-weight-bolder" href="#"> 法语学习 </a>
+            <a class="nav-link active btn btn-lg btn-info font-weight-bolder" href="http://localhost:5001/cooperation"> 商务合作  <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link btn btn-info font-weight-bolder" href="#"> 商务合作 </a>
+        <% }else{ %>
+          <li class="nav-item">
+            <a class="nav-link btn btn-info font-weight-bolder" href="http://localhost:5001/cooperation"> 商务合作 </a>
+          </li>
+        <% } %>
+
+        <% if (menu == 'contact-us') {%>
+          <li class="nav-item">
+              <a class="nav-link active btn btn-lg btn-large btn-info font-weight-bolder" href="http://localhost:5001/contact-us"> 联系我们  <span class="sr-only">(current)</span></a>
+          </li>
+        <% }else{ %>
+          <li class="nav-item">
+            <a class="nav-link btn btn-info font-weight-bolder" href="http://localhost:5001/contact-us"> 联系我们 </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link btn btn-info font-weight-bolder" href="#"> 联系我们 </a>
+        <% } %>
+
+        <% if (menu == 'about-us') {%>
+          <li class="nav-item">
+              <a class="nav-link btn active btn-lg btn-info font-weight-bolder " href="http://localhost:5001/about-us"> 关于我们  <span class="sr-only">(current)</span></a>
+          </li>
+        <% }else{ %>
+          <li class="nav-item">
+            <a class="nav-link btn btn-info font-weight-bolder " href="http://localhost:5001/about-us"> 关于我们 </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link btn btn-info font-weight-bolder " href="#"> 关于我们 </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link btn btn-info font-weight-bolder" href="#"> 博客 </a>
-        </li>
+        <% } %>
+
+        <% if (menu == 'blog') {%>
+          <li class="nav-item">
+              <a class="nav-link btn btn-lg active btn-info font-weight-bolder" href="http://localhost:5001/blog"> 博客 <span class="sr-only">(current)</span></a>
+          </li>
+        <% }else{ %>
+          <li class="nav-item">
+            <a class="nav-link btn btn-info font-weight-bolder" href="http://localhost:5001/blog"> 博客 </a>
+          </li>
+        <% } %>
       </ul>
     </div>
   </div>
