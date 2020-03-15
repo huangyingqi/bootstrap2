@@ -251,8 +251,217 @@ section{
 
 }
 
-/* .card-text p{
-  font-size: 26px;
-} */
+.card-body p{
+  font-size: 20px;
+}
+
+.compus-head {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  /* width: 300px; */
+
+  background-image: url("../images/mcgill-2-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin-top: 30px;
+  margin-bottom: 40%;
+  background-color: #0080;
+}
+
+.compus-body {
+  background-color: #fff;
+  margin-top: 55%;
+  height: 100vh;
+}
+
+.compus-headline {
+  height: 100vh;
+}
+
+.compus-text {
+  height: 65vh;
+  color: #000;
+  background-color: rgb(232, 234, 236);
+}
+
+.acontainer {
+  background: rgb(232, 234, 236);
+  padding: 7em;
+  color: rgb(8, 8, 8);
+}
+
+.elementor-icon-box-wrapper{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.acontainer:hover{
+  animation: hyqanimation 1s forwards 0.1s ease-in-out;
+}
+
+.acontainer h1{
+  font-size: 3em;
+}
+
+.acontainer p{
+  font-size: 1.1em;
+  line-height: 1.6em;
+ 
+}
+
+a.cta{
+  display: inline-block;
+  padding: 1em;
+  background: rgb(242, 255, 196);
+  border-radius: 4px;
+  color: rgb(5, 5, 5);
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+@keyframes hyqanimation{
+  0%{
+      transform: rotate(0) translateY(-15%);
+      opacity: 0;
+      }
+  20%{
+    transform: rotate(0) translateY(-10%);
+    opacity: 0.2;
+    }
+  30%{
+    transform: rotate(0) translateY(-2%);
+    opacity: 0.2;
+    }
+  40%{
+    transform: rotate(0) translateY(2%);
+    opacity: 0.8;
+    }
+  50%{
+    transform: rotate(0) translateY(-1%);
+    opacity: 0.8;
+    }
+  100%{
+      transform: rotate(0) translateY(0);
+      opacity: 1;
+      }
+}
+
+.star-green{
+  color: rgb(22, 175, 86);
+}
+
+.star-red{
+  color: rgb(230, 70, 70);
+}
+
+.star-yellow{
+  color: rgb(240, 237, 50);
+}
+
+.compus-high {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 80vh;
+  /* width: 300px; */
+
+  background-image: url("../images/macgill-camp2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  /* margin-top: 30px;
+  margin-bottom: 40%;
+  background-color: #0080; */
+  opacity: 0.5;
+}
+
+.compus-local {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 80vh;
+
+  background-image: url("../images/macgill-camp4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.5;
+}
+
+.compus-intel {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 80vh;
+
+  background-image: url("../images/法语学习2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.5;
+}
+
+.franch-beauty-tittle{
+  margin-top: 8%;
+  font-weight: bold;
+  font-size: 2rem;
+  animation: franch-tittle 1s forwards 0s ease;
+}
+
+.franch-beauty-tittle h1{
+  font-weight: bold;
+  font-size: 3.5rem;
+  
+}
+
+.franch-beauty-phrase {
+  margin: 5% 20%;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.6em;
+  text-align: left;
+}
+
+.franch-beauty-img img{
+  width: 70%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+@keyframes franch-tittle{
+  0%{
+      transform: rotate(0) translateY(-80px);
+      opacity: 0.5;
+      font-size: 10px;
+      }
+  100%{
+      transform: rotate(0) translateY(0);
+      }
+}
+
+.about-us{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 80vh;
+
+  background-image: url("../images/关于我们header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.5;  
+}
+
+
 
 
