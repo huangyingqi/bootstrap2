@@ -17,6 +17,7 @@ const franch = require('./routes/franch')
 const contact = require('./routes/contact-us')
 const about = require('./routes/about')
 const blog = require('./routes/blog')
+const boards = require('./routes/boards')
 
 // error handler
 onerror(app)
@@ -57,6 +58,7 @@ app.use(franch.routes(), franch.allowedMethods())
 app.use(contact.routes(), contact.allowedMethods())
 app.use(about.routes(), about.allowedMethods())
 app.use(blog.routes(), blog.allowedMethods())
+app.use(boards.routes(), boards.allowedMethods())
 
 
 // error-handling
